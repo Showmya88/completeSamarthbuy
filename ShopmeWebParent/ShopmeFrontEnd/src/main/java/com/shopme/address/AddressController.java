@@ -83,7 +83,7 @@ public class AddressController {
 	
 	@PostMapping("/address_book/cancel")
 	public String cancelAddress(Address address, HttpServletRequest request, RedirectAttributes ra) {
-	String redirectURL = "redirect:/cancel";
+	String redirectURL = "redirect:/address_book";
 	return redirectURL;
 	}
 	

@@ -1,22 +1,37 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-<link th:replace="fragments :: page_head(${pageTitle}, 'none')" />
-<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
-	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
-<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
-<link rel="stylesheet" type="text/css" th:href="@{/register_success_style.css}" />
-</head>
-<body th:style="'background-image:url(' + @{/images/bg1.jpg} +'); background-size: cover;'">
-<div class="container-fluid">
-	<div th:replace="navigation :: header_menu4"></div>
-	<div class="center" align="center">
-   		<h1>Customer Registration</h1>
-  		<p class="size">You have registered successfully as a customer</p>
-  		<img src="images/verify.jpg"/>
-  		<p class="color">Please Check Your Email to Verify your account</p>
-  		<p><a th:href="@{/login}">Login here</a></p>   
-		<footer><div th:replace="navigation :: footer_menu"></div></footer>
-	</div>	
-</body>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>frame_29</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<link rel="StyleSheet" href="frame_29.css" />
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+		<!-- Add your custom HEAD content here -->
+
+	</head>
+	<body>
+		<div id="content-container" >
+			<div id="page_frame_29_ek1"  >
+				<div id="_bg__frame_29_ek2"  ></div>
+				<img src="images/skins1/vector_4.png" id="vector_4" />
+				<div id="rectangle_102"  ></div>
+				<div id="samarthbuy" >
+					SAMARTHBUY
+				</div>
+				<div id="thank_you_for_registering____" >
+					Thank you for registering !!!
+				</div>
+				<div id="you_will_be_notified_through_your_registered_email_id_on_your_account_activation__once_your_account_verification_process_is_completed_" >
+					You will be notified through your registered email id on your account activation, <br/>once your account verification process is completed.
+				</div>
+				<div id="rectangle_98"  ></div>
+				<div id="ok" >
+					
+ 				<button type="button" class=" back-fp"><a th:href="@{/login}" id="lfp">OK</a></button>
+				</div>
+				<img src="images/skins1/pngwing_com___2023_02_17t163330_1.png" id="pngwing_com___2023_02_17t163330_1" />
+
+			</div>
+		</div>
+	</body>
 </html>
