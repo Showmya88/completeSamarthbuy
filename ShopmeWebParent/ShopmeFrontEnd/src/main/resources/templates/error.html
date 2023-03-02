@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments :: page_head('Error - Shopme', 'none')" />
-<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
-	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
-<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
-<link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
 </head>
 <body>
 <div class="container-fluid">
@@ -13,7 +9,7 @@
 		<h2>Sorry, an unexpected error has occurred</h2>		
 	</div>
 
-	<footer><div th:replace="navigation :: footer_menu"></div></footer>
+	<div th:replace="navigation :: footer_menu"></div>
 	
 </div>
 </body>

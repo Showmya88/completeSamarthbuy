@@ -34,49 +34,12 @@
         border-radius:50%;
     } 
 
-.size{
+    .text {
+        text-align: center;
+        color: rgb(165, 8, 238);
+        font-size: 30px;
+    }
+    .size{
         text-align: center;
         font-size: 18px;
     }
-    /*index.html*/
- .index2{
-        width: 110%;
-        height: 300px;
-        border: 6px solid #06004E;
-        }
-.png{
-      width: 105%;
-      height: 255px;
-        }
-       
-        /* policy style*/
-        .policy{
-	text-align:center;
-	width:100%;
-	padding:10px;
-	font-weight:bold;
-	position:sticky;
-	top:0;
-	background-color:white;
-	}
-	.policylink{
-	 background-color:white;
-	  margin:auto;
-	  width: 65%;
-	  border: 3px solid black;
-	  padding: 10px;
-	 outline:  #421AA3 solid 50px;
-	 display:flex;
-	  }
-      .browser{
-	  height:260%;
-	  }
- .privacy{
-  
-  height:650%;
-  font-size:18px;
- }
-.terms{
-
-height:615%;
-}

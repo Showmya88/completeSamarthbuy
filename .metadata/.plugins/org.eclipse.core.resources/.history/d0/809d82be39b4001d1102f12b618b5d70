@@ -1,0 +1,43 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Samarthbuy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<link rel="StyleSheet" href="frame_1.css" />
+		<link th:replace="fragments :: page_head('Shopme', 'none')" />
+		<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/frame1.css}" /></head>
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+	</head>
+	<body>
+		<div id="content-container" >
+		
+			<div id="page_frame_1_ek1"  >
+				<div id="_bg__frame_1_ek2"  ></div>
+				<img src="images/skins/vector_4.png" id="vector_4" />
+				<div id="rectangle_202"  ></div>
+				
+				<div id="samarthbuy1" >
+					<b>SAMARTHBUY</b>
+					</div>
+	
+	
+
+	<div th:if="${title != null}">
+		<h2>[[${title}]]</h2>
+	</div>
+		
+	<div th:if="${message != null}">
+		
+		<h3>[[${message}]]</h3>
+	</div>
+	</div>
+	<div>&nbsp;</div>
+	
+	
+</div>	
+</body>
+</html>

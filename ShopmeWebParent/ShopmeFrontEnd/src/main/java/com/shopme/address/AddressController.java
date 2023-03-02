@@ -75,18 +75,10 @@ public class AddressController {
 			redirectURL += "?redirect=checkout";
 		}
 		
-		ra.addFlashAttribute("message", " Address saved successfully.");
+		ra.addFlashAttribute("message", "The address has been saved successfully.");
 		
 		return redirectURL;
 	}
-	
-	
-	@PostMapping("/address_book/cancel")
-	public String cancelAddress(Address address, HttpServletRequest request, RedirectAttributes ra) {
-	String redirectURL = "redirect:/cancel";
-	return redirectURL;
-	}
-	
 	
 	@GetMapping("/address_book/edit/{id}")
 	public String editAddress(@PathVariable("id") Integer addressId, Model model,
@@ -109,7 +101,7 @@ public class AddressController {
 		Customer customer = controllerHelper.getAuthenticatedCustomer(request);
 		addressService.delete(addressId, customer.getId());
 		
-		ra.addFlashAttribute("message", " Address ID " + addressId + "  deleted successfully.");
+		ra.addFlashAttribute("message", "The address ID " + addressId + " has been deleted.");
 		
 		return "redirect:/address_book";
 	}

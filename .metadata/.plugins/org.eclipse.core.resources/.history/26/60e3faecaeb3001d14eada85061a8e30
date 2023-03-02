@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head >
+		<link th:replace="fragments :: page_head(${pageTitle}, 'none')" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+		 <link rel="stylesheet" type="text/css" th:href="@{/register.css}" />
+</head>
+<body>
+<div class="container-fluid ">
+		<div class="row  ">
+				<div class="col-sm-7 col-2 fixed-top one">
+						<p class="p1">
+						<img src="images/sb.PNG"></p> 	
+						<p class="lines1">Samarthbuy is an online e-commerce platform for Differently Abled People.<br>This website helps them to purchase products in affordable price.
+						 <br/> <br/> <br/>
+						<div class="design ">
+							<div th:replace="navigation :: footer_menu2"></div>
+						</div>	
+				</div>
+				<div class="col offset-sm-7 ">
+						<div class="text-right design">
+							Already Have an Account? <a class="login" th:href="@{/login}">Sign in</a>
+						</div>
+						<div class="text-left">
+								<h2>Customer Registration Form</h2>
+								<h6>Please fill the required fields</h6>
+						</div>
+						

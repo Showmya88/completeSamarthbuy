@@ -1,0 +1,14 @@
+html xmlns:th="http://www.thymeleaf.org">
+<head >
+<link th:replace="fragments :: page_head(${pageTitle}, 'none')" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+
+	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+
+ <link rel="stylesheet" type="text/css" th:href="@{/register.css}" />
+ 
+
+ </head>
+<body>
