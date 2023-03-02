@@ -11,32 +11,33 @@
 <body>
 <div class="container-fluid">
 	<div th:replace="navigation :: header_menu4"></div>
-	
-
-	<div class="text-center">
-		<h2>Checkout</h2>
+	<div class="container-fluid p-3 mt-3">
+	<h6>Home > cart> Shipping &Payment</h6>
+	<div class="text-left">
+		<h2>shipping information</h2>
 	</div>
 	
 	<div class="row m-1">
 		<div class="col-sm-8">
-			<div class="card">
-				<div class="card-header"><h5>Shipping information</h5></div>
+			<div class="card checkout1">
+				<div ><h5 class="m-3">Shipping Address</h5></div>
 				<div class="card-body">
 					<p>
-						<b>Ship to:</b>&nbsp; [[${shippingAddress}]]
+					&nbsp; [[${shippingAddress}]]
 						<a th:href="@{/address_book(redirect=checkout)}">[Ship to another address]</a>
 					</p>
 					<p>
 						<b>Days to deliver: </b>[[${checkoutInfo.deliverDays}]] day(s)
 					</p>
 					<p>
+					<hr/>
 						<b>Expected deliver date: </b>[[${#dates.format(checkoutInfo.deliverDate, 'E, dd MMM yyyy')}]]
 					</p>
 				</div>
 			</div>		
 			
-			<div class="card mt-3 mb-3">
-				<div class="card-header"><h5>Payment Method</h5></div>
+			<div class=" mt-5 mb-5">
+				<div ><h5>Payment Method</h5></div>
 				<div class="card-body">
 					<div th:if="${checkoutInfo.codSupported}">
 						<form th:action="@{/place_order}" method="post">
@@ -44,7 +45,7 @@
 						
 							<input type="radio" name="paymentMethod" id="radioCOD" value="COD" /> Cash on Delivery (COD)
 							&nbsp;
-							<button class="btn btn-primary d-none" type="submit" id="buttonSubmit">Place Order with COD</button>
+							<button style="background-color:#301B86;color:aliceblue;"class="btn d-none" type="submit" id="buttonSubmit">Use this Payment Method</button>
 						</p>
 						</form>
 					</div>
@@ -59,8 +60,8 @@
 		</div>
 		
 		<div class="col-sm-4">
+			<div ><h5>Price Details</h5></div>
 			<div class="card">
-				<div class="card-header"><h5>Order Summary</h5></div>
 				<div class="card-body">
 					<div>
 					<table>
@@ -98,12 +99,24 @@
 						<div class="col"><b><div th:replace="fragments :: format_currency(${checkoutInfo.paymentTotal})"></div></b></div>
 					</div>										
 				</div>
-			</div>		
-		</div>		
+			</div>
+			<div class="card checkout2 mt-3">		
+		
+	<div class="row">
+	<div class="col text-center">
+	<img style="transform: rotate(90deg);"  src="./images/cart img.png"></img>
+	</div></div>
+	<div class="row text-left m-3">
+	<p style="font-size:24px;">Note:</p>
+	<p style="font-size:18px;">Goods once sold cannot be replaced or returned</p>
 	</div>
 	
+	</div>
+	</div></div>		
+	</div></div>
+	
 	<div th:replace="fragments :: modal_dialog"></div>
-	<div th:replace="navigation :: footer_menu"></div>
+	<footer><div th:replace="navigation :: footer_menu"></div></footer>
 </div>
 <script th:src="@{https://www.paypal.com/sdk/js(client-id=${paypalClientId},currency=${currencyCode})}"></script>
 <script type="text/javascript" th:src="@{/js/common_modal.js}"></script>
@@ -191,3 +204,4 @@
 </script>
 </body>
 </html>	
+
