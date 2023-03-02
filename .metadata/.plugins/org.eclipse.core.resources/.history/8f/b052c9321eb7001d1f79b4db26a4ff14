@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link th:replace="fragments :: page_head(${pageTitle}, 'none')" />
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/register_success_style.css}" />
+</head>
+<body th:style="'background-image:url(' + @{/images/bg1.jpg} +'); background-size: cover;'">
+<div class="container-fluid">
+	<div th:replace="navigation :: header_menu4"></div>
+	<div class="center" align="center">
+   		<h1>Customer Registration</h1>
+  		<p class="size">You have registered successfully as a customer</p>
+  		<img src="images/verify.jpg"/>
+  		<p class="color">Please Check Your Email to Verify your account</p>
+  		<p><a th:href="@{/login}">Login here</a></p>   
+		<div th:replace="navigation :: footer_menu2" ></div>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,93 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Samarthbuy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<link rel="StyleSheet" href="frame_1.css" />
+		<link th:replace="fragments :: page_head('Shopme', 'none')" />
+		<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/frame1.css}" /></head>
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+	</head>
+	<body>
+		<div id="content-container" >
+		
+			<div id="page_frame_1_ek1"  >
+				<div id="_bg__frame_1_ek2"  ></div>
+				<img src="images/skins/vector_4.png" id="vector_4" />
+				<div id="rectangle_202"  ></div>
+				
+				<div id="samarthbuy" >
+					<b>SAMARTHBUY</b>
+					</div>
+					
+				
+			
+				<div id="samarthbuy_is_an_online_e_commerce_platform_for_differently_abled_people__this_website_helps_them_to_purchase_products_in_less_price_" >
+					Samarthbuy is an online e-commerce platform for Differently Abled<br/>People. This website helps them to purchase products in less price.
+				</div>
+				
+				 <div th:replace="navigation :: footer_menu"></div>
+				
+				
+				
+				<div id="imagefp" >
+					<img src="images/updatepwd/vector.png"  />
+				</div>
+				
+				
+				
+				<div id="forgot_password_fp" >
+					Reset your Password
+				</div>
+				
+				<form th:action="@{/forgot_password}" method="post" style="max-width: 460px; margin: 0 auto">
+				<div th:if="${error != null}">
+		<p class="text-danger">[[${error}]]</p>
+	</div>
+	<div th:if="${message != null}">
+		<p class="text-warning">[[${message}]]</p>
+	</div>	
+				<div id="emailfp">
+				 New Password</div>
+				 <div id="txt1fp">
+				   <input type="text" name="email" class="form-control " placeholder="Enter your email" required autofocus="autofocus" />
+				</div>
+	
+				<div id="emailfp">
+				 Confirm Password</div>
+				 <div id="txt1fp">
+				   <input type="text" name="email" class="form-control " placeholder="Enter your email" required autofocus="autofocus" />
+				</div>
+				
+				<div id="rectangle_198">
+				<input type="submit" value="SUBMIT" class="sign-infp"/>
+				</div>
+				
+				<div  id="rectangle_199">
+ 				<button type="button" class=" back-fp"><a th:href="@{/login}" id="lfp">BACK</a></button></div>
+				</form>
+				
+				
+				
+			
+				
+
+				<div id="group_8"  >
+					<img src="images/skins/_180026880_1.png" id="_180026880_1" />
+					<img src="images/skins/pngwing_2.png" id="pngwing_2" />
+					<img src="images/skins/pngwing_3.png" id="pngwing_3" />
+					<img src="images/skins/pngwing_4.png" id="pngwing_4" />
+					<img src="images/skins/imagechldpng_1.png" id="imagechldpng_1" />
+					<img src="images/skins/pngwing_1.png" id="pngwing_1" />
+
+				</div>
+
+			</div>
+		
+		
+	</body>
+</html>

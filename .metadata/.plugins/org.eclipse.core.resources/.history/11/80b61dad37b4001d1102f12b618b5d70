@@ -1,0 +1,329 @@
+/*
+	@name frame_39
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1280px; width: 1280px; height: 720px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+
+#page_frame_39_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1280px;
+	height: 720px;
+}
+
+#_bg__frame_39_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1280px;
+	height: 720px;
+	background:rgba(238,238,238,1);
+}
+
+
+#vector_4 {
+	top: 242px;
+	left: -47px;
+	width: 1440px;
+	height: 552px;
+}
+
+
+#rectangle_102 {
+	top: 136px;
+	left: 100px;
+	width: 1079px;
+	height: 512px;
+	-ms-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	-o-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	background:rgba(255,255,255,1);
+}
+
+
+#samarthbuy_is_an_online_e_commerce_platform_for_differently_abled_people__this_website_helps_them_to_purchase_products_in_affordable_price_ {
+	top: 500px;
+	left: 139px;
+	width: 598px;
+	height: 49px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color:#454545;
+}
+
+
+#new_password {
+	top: 339px;
+	left: 766px;
+	width: 143.5px;
+	height: 32.5px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 17px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#confirm_password {
+	top: 439px;
+	left: 766px;
+	width: 171.5px;
+	height: 32.5px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 17px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#reset_your_password {
+	top: 277px;
+	left: 832px;
+	width: 249.5px;
+	height: 54.5px;
+	overflow: hidden;
+	font-family: IBM Plex Sans Thai;
+	font-size: 23px;
+	text-align: left;
+	color:#000000;
+}
+
+#group_4 {
+	top: 362px;
+	left: 766px;
+	width: 361px;
+	height: 150px;
+}
+
+#rectangle_103 {
+	top: 0px;
+	left: 0px;
+	width: 364px;
+	height: 53px;
+	border: 1.5px solid #282b77;
+	background:rgba(255,255,255,1);
+}
+
+
+#rectangle_104 {
+	top: 100px;
+	left: 0px;
+	width: 364px;
+	height: 53px;
+	border: 1.5px solid #282b77;
+	background:rgba(255,255,255,1);
+}
+
+
+#enter_your_new_password {
+	top: 17px;
+	left: 29px;
+	width: 213px;
+	height: 30px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	color:#393939;
+}
+
+
+#confirm_your_new_password {
+	top: 117px;
+	left: 29px;
+	width: 233px;
+	height: 30px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	color:#393939;
+}
+
+#group_6 {
+	top: 552px;
+	left: 767px;
+	width: 205px;
+	height: 43px;
+}
+
+#rectangle_98 {
+	top: 0px;
+	left: 0px;
+	width: 207px;
+	height: 45px;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:rgba(100,51,215,1);
+}
+
+
+#change_password {
+	top: 13px;
+	left: 32px;
+	width: 162px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 14px;
+	text-align: left;
+	color:#FFFFFF;
+}
+
+#group_9 {
+	top: 552px;
+	left: 992px;
+	width: 135px;
+	height: 43px;
+}
+
+#rectangle_98_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 139px;
+	height: 47px;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 2px solid #000000;
+	background:rgba(225.25,225.25,225.25,1);
+}
+
+
+#cancel {
+	top: 13px;
+	left: 39px;
+	width: 77px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 14px;
+	text-align: left;
+	color:#313131;
+}
+
+#group_8 {
+	top: 280px;
+	left: 189px;
+	width: 465px;
+	height: 204px;
+}
+
+#_180026880_1 {
+	top: 12px;
+	left: 296px;
+	width: 169px;
+	height: 172px;
+}
+
+
+#pngwing_2 {
+	top: 122px;
+	left: 402px;
+	width: 63px;
+	height: 61px;
+}
+
+
+#pngwing_3 {
+	top: 97px;
+	left: 51px;
+	width: 63px;
+	height: 61px;
+}
+
+
+#pngwing_4 {
+	top: 67px;
+	left: 145px;
+	width: 63px;
+	height: 61px;
+}
+
+
+#imagechldpng_1 {
+	top: 0px;
+	left: 0px;
+	width: 421px;
+	height: 204px;
+}
+
+
+#pngwing_1 {
+	top: 76px;
+	left: 337px;
+	width: 72.2px;
+	height: 72.2px;
+}
+
+
+#copyright_2022_samarthbuy__all_rights_reserved {
+	top: 597px;
+	left: 285px;
+	width: 280.5px;
+	height: 20.5px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 11px;
+	text-align: left;
+	color:#0E194E;
+}
+
+
+#terms_of_use___privacy_policy___browser_policy {
+	top: 612px;
+	left: 297px;
+	width: 256.5px;
+	height: 20.5px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 11px;
+	text-align: left;
+	color:#421AA3;
+}
+
+
+#samarthbuy {
+	top: 167px;
+	left: 148px;
+	width: 241px;
+	height: 59px;
+	overflow: hidden;
+	font-family: Gugi;
+	font-size: 30px;
+	text-align: left;
+	color:#C2BFCD;
+}
+
+
+#vector {
+	top: 175px;
+	left: 915px;
+	width: 64px;
+	height: 75px;
+}
+
+
+
+/* Add your custom CSS here */

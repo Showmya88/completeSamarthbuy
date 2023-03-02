@@ -1,0 +1,759 @@
+/*
+	@name frame_1
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden;}
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1280px; width: 1280px; height: 720px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+ html {
+  
+    background-color: #ededed;
+     
+   
+}
+
+
+#page_frame_1_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1500px;
+	height: 100px;
+	
+}
+
+#_bg__frame_1_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 2000px;
+	height: 640px;
+	
+}
+
+#vector_4 {
+	top: 242px;
+	left: -47px;
+	width: 1440px;
+	height: 400px;
+	
+	
+}
+
+
+#rectangle_102 {
+	top: 120px;
+	left: 100px;
+	width: 1079px;
+	height: 480px;
+	-ms-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	-o-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	background:rgba(255,255,255,1);
+}
+
+
+#forgotten_username_or_password {
+	top: 507px;
+	left: 926px;
+	width: 189.5px;
+	height: 46.5px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 15px;
+	text-align: left;
+	color:#193DFF;
+}
+
+
+#copyright_2022_samarthbuy__all_rights_reserved {
+	top: 580px;
+	left: 305px;
+	width: 230.5px;
+	height: 17.5px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 9px;
+	text-align: left;
+	color:#0E194E;
+}
+#sign_in_into_samarthbuy {
+	opacity:0.7;
+	top: 150px;
+	left: 763px;
+	width: 307.5px;
+	height: 54.5px;
+	overflow: hidden;
+	font-family: IBM Plex Sans Thai;
+	font-size: 23px;
+	text-align: left;
+	color:#241941;
+}
+
+
+#create_a_new_account {
+	top: 589px;
+	left: 856px;
+	width: 190px;
+	height: 30px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	color:#551ED6;
+}
+
+
+#samarthbuy_is_an_online_e_commerce_platform_for_differently_abled_people__this_website_helps_them_to_purchase_products_in_less_price_ {
+	top: 440px;
+	left: 174px;
+	width: 542px;
+	height: 49px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	color:#454545;
+}
+
+#samarthbuy {
+	top: 130px;
+	left: 170px;
+	width: 359.5px;
+	height: 87.5px;
+	overflow: hidden;
+	font-family: Gugi;
+	font-size: 45px;
+	text-align: left;
+	color:#C2BFCD;
+}
+
+#terms_of_use___privacy_policy___browser_policy {
+	top: 611px;
+	left: 319px;
+	width: 1000px;
+	height: 17.5px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 100px;
+	text-align: left;
+	color:#421AA3;
+}
+.btn2
+{
+	width: 361px;
+	height: 39px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background:rgba(65,132,243,1);
+	color:#FDFEFE ;
+}
+
+.btn1
+{
+	width: 361px;
+	height: 39px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background:rgba(65,93,174,1);
+	color:#FDFEFE ;
+}
+
+#googlefb {
+	top: 450px;
+	left: 900px;
+	width: 4000px;
+	height: 100px;
+	
+	font-family: Inter;
+	font-size: 16px;
+	
+	color:#4184F3;
+	
+}
+#paraSignin
+{
+	top: 470px;
+	left: 790px;
+	font-family: Inter;
+	font-size: 16px;
+	width: 4000px;
+	height: 100px;
+	color:#4184F3;
+	
+}
+{
+	top: 450px;
+	left: 3000px;
+}
+#googlefb1 {
+	top: 500px;
+	left: 766px;
+	width: 600px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	color:#FDFEFE ;
+}
+
+#email {
+	top: 200px;
+	left: 766px;
+	width: 600px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	color:#484848;
+}
+#txt1
+{
+	top: 220px;
+	left: 766px;
+	width: 364px;
+	height: 40px;
+	border: 1.5px solid #282b77;
+	background:rgba(255,255,255,1);
+}
+#pwd
+{
+	top: 280px;
+	left: 766px;
+	width: 600px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	color:#484848;
+}
+
+#txt2 {
+	top: 300px;
+	left: 766px;
+	width: 364px;
+	height: 40px;
+	border: 1.5px solid #282b77;
+	background:rgba(255,255,255,1);
+}
+
+#vector {
+	top: 4px;
+	left: 8px;
+	width: 6.3px;
+	height: 6.3px;
+}
+
+
+#vector_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 22px;
+	height: 14.67px;
+}
+#group {
+	top: 310px;
+	left: 1087px;
+	width: 22px;
+	height: 14.67px;
+}
+
+#remember-me{
+	top: 350px;
+	left: 766px;
+	width: 364px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	color:#484848;
+}
+
+#rectangle_98 {
+	top: 380px;
+	left: 766px;
+	width: 137px;
+	height: 45px;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:rgba(100,51,215,1);
+}
+
+.sign-in {
+	top: 200px;
+	left: 807px;
+	width: 137px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 14px;
+	text-align: center;
+	color:#FFFFFF;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:rgba(100,51,215,1);
+}
+
+#forgot_password
+{
+	top: 390px;
+	left: 920px;
+	font-family: Inter;
+}
+#sign_up
+{
+	top: 560px;
+	left:807px;
+	font-family: Inter;
+}
+
+
+
+#group_8 {
+	top: 220px;
+	left: 189px;
+	width: 465px;
+	height: 204px;
+}
+
+#_180026880_1 {
+	top: 12px;
+	left: 296px;
+	width: 169px;
+	height: 172px;
+}
+
+
+#pngwing_2 {
+	top: 122px;
+	left: 402px;
+	width: 63px;
+	height: 61px;
+}
+
+
+#pngwing_3 {
+	top: 97px;
+	left: 51px;
+	width: 63px;
+	height: 61px;
+}
+
+
+#pngwing_4 {
+	top: 67px;
+	left: 145px;
+	width: 63px;
+	height: 61px;
+}
+
+
+#imagechldpng_1 {
+	top: 0px;
+	left: 0px;
+	width: 421px;
+	height: 204px;
+}
+
+
+#pngwing_1 {
+	top: 76px;
+	left: 337px;
+	width: 72.2px;
+	height: 72.2px;
+}
+
+#samarthbuy_logo {
+	top: 80px;
+	left: 38px;
+	width: 130.5px;
+	height:60px;
+	overflow: hidden;
+	font-family: Jockey One;
+	font-size: 30px;
+	text-align: left;
+	color:#00245A;
+}
+#back
+{
+	width: 137px;
+	height: 45px;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:rgba(100,51,215,1);
+}
+#bad_credentials
+{
+	top:120px;
+	left:890px;
+}
+
+#emailfp
+{
+	top: 410px;
+	left: 766px;
+	width: 600px;
+	height: 100px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	color:#484848;
+}
+#txt1fp
+{
+	top: 440px;
+	left: 766px;
+	width: 364px;
+	height: 42px;
+	border: 1.5px solid #282b77;
+	background:rgba(255,255,255,1);
+}
+#rectangle_198
+{
+	top: 500px;
+	left: 800px;
+	width: 137px;
+	height: 45px;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:rgba(100,51,215,1);
+}
+.sign-infp
+{
+	top: 280px;
+	left: 807px;
+	width: 137px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 14px;
+	text-align: center;
+	color:#FFFFFF;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:rgba(100,51,215,1);
+}
+
+#rectangle_199
+{
+	top: 500px;
+	left: 960px;
+	width: 137px;
+	height: 45px;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:#E5E7E9;
+}
+.back-fp{
+	top: 280px;
+	left: 807px;
+	width: 137px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 14px;
+	text-align: center;
+	color:#FFFFFF;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:#85929E ;
+}
+#lfp
+{
+	color:#FFFFFF;
+}
+#imagefp
+{
+	top: 150px;
+	left: 860px;
+
+}
+#para1
+{
+	top: 320px;
+	left: 700px;
+	
+	width: 480px;
+	height: 100px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	
+	text-align: center;
+	color:#454545;
+}
+
+#rectangle_202 {
+	top: 120px;
+	left: 100px;
+	width: 1090px;
+	height: 500px;
+	-ms-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	-o-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	box-shadow:0px 6px 31px 1px rgba(0,0,0,0.25);
+	background:rgba(255,255,255,1);
+}
+
+#forgot_password_fp
+{
+	opacity:0.7;
+	
+	top: 280px;
+	left: 820px;
+	width: 247.5px;
+	height: 54.5px;
+	
+	font-family: IBM Plex Sans Thai;
+	font-size: 23px;
+	text-align: left;
+	color:#241941;
+}
+#imagefp1
+{
+	top: 400px;
+	left:860px;
+
+}
+
+#rectangle_300
+{
+	top: 500px;
+	left: 830px;
+	width: 137px;
+	height: 45px;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:#E5E7E9;
+}
+#para2
+{
+	top: 325px;
+	left: 680px;
+	
+	width: 480px;
+	height: 100px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	
+	text-align: center;
+	color:#454545;
+}
+
+
+
+#newpwd
+{
+	top: 330px;
+	left: 766px;
+	width: 364px;
+	height: 42px;
+	font-family: Inter;
+	font-size: 20px;
+	
+}
+
+#newpwdtxt1
+{
+	top: 360px;
+	left: 766px;
+	width: 364px;
+	height: 42px;
+	border: 1.5px solid #282b77;
+	background:rgba(255,255,255,1);
+}
+#confirmpwd
+{
+	top: 420px;
+	left: 766px;
+	width: 364px;
+	height: 42px;
+	font-family: Inter;
+	font-size: 20px;
+}
+
+#confirmpwdtxt1
+{
+	top: 450px;
+	left: 766px;
+	width: 364px;
+	height: 42px;
+	border: 1.5px solid #282b77;
+	background:rgba(255,255,255,1);
+}
+.changePwd
+{
+	top: 280px;
+	left: 770px;
+	width: 180px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 14px;
+	text-align: center;
+	color:#FFFFFF;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:rgba(100,51,215,1);
+}
+
+#rectangle_399
+{
+	top: 540px;
+	left: 770px;
+	width:180px;
+	height: 45px;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:#E5E7E9;
+}
+
+
+
+#changeBack
+{
+	
+	font-size:18px;
+	color:#FFFFFF;
+}
+
+#rectangle_499
+{
+	top: 540px;
+	left: 980px;
+	width:100px;
+	height: 45px;
+	-ms-border-radius: 19px;
+	-o-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	border: 1px solid #000000;
+	background:#E5E7E9;
+}
+#samarthbuy1 {
+	top: 130px;
+	left: 170px;
+	width: 359.5px;
+	height: 87.5px;
+	overflow: hidden;
+	font-family: Gugi;
+	font-size: 45px;
+	text-align: left;
+	color:#C2BFCD;
+}
+
+#invalid
+{
+	top: 400px;
+	left: 500px;
+	width: 500px;
+	height: 100px;
+}
+#valid
+{
+	top: 400px;
+	left: 500px;
+	width: 500px;
+	height: 100px;
+	font-family: Gugi;
+	font-size: 45px;
+	
+}
+
+#validimage
+{
+	top: 500px;
+	left: 500px;
+	width: 1000px;
+	height: 1000px;
+	
+	
+}
+#thumb
+{
+	top:100px;
+	left: 20px;
+}
+
+ background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+#dateofbirth
+{
+	border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  p[type="date"] {
+ adding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  width: 190px;
+}

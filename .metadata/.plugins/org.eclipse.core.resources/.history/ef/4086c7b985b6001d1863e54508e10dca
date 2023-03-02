@@ -1,0 +1,345 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head >
+<link th:replace="fragments :: page_head(${pageTitle}, 'none')" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+
+ <link rel="stylesheet" type="text/css" th:href="@{/register.css}" />
+ 
+   
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+rel = "stylesheet">
+ </head>
+<body>
+<div class="container-fluid ">
+<div class="row  ">
+				<div class="col-sm-7 col-2 fixed-top one">
+						<br/>
+						<p class="p1">
+						<img src="images/sb.PNG"></p> 	
+						<p class="lines1">Samarthbuy is an online e-commerce platform for Differently Abled People.<br>This website helps them to purchase products in affordable price.
+						 <br/> <br/> <br/>
+						<div class="design ">
+							<div th:replace="navigation :: footer_menu2"></div>
+						</div>	
+				</div>
+	
+				<div class="col-sm-5 offset-sm-7 two ">
+				<form th:action="@{/create_customer}" method="post" th:object="${customer}"
+							style="max-width: 600px; margin: 0 auto"
+							onsubmit="return checkEmailUnique(this);">
+				<div class="border rounded p-3 " >
+						<div class="text-right design">
+							Already Have an Account? <a class="login" th:href="@{/login}">Sign in</a>
+						</div>
+						<div class="text-left">
+								<h2>Customer Registration Form</h2>
+								<h6>Please fill the required fields</h6>
+						</div> 												
+											<div class="form-group row ">																								
+													<div  class='registeringfor design'>
+													Registering for <label class="star">*</label>   				
+													&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+										
+													<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Self" checked="checked">
+  													<label class="form-check-label" for="inlineRadio1" >Self</label>
+													&nbsp	&nbsp	&nbsp	&nbsp &nbsp	&nbsp
+													<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Others">
+  													<label class="form-check-label" for="inlineRadio1">Others</label>
+									
+											</div>	
+										</div>
+										
+										<div class="form-group row col-md-6">
+												<label class=" basicdetails">Basic Details</label>
+										</div>	
+										
+										
+										<div class="form-row design ">
+    											<div class="form-group col-md-6">
+     					 							<label for="col-form-label">First Name<span class="text-danger">*</span></label>
+      					 							<input type="text" th:field="*{firstName}" class="form-control border border-dark" placeholder="Enter your first name"
+													required="required" maxlength="45" minlength="8" />
+   					 							</div>
+   					 							
+   				 								<div class="form-group col-md-6">
+      												<label for="col-form-label">Last Name<span class="text-danger">*</span></label>
+     												<input type="text" th:field="*{lastName}" class="form-control border border-dark"
+													required="required"  maxlength="45" minlength="8" placeholder="Enter your last name"/>
+   				 								</div>
+ 										 </div>
+											
+										<div class="form-group row design ">
+											
+												<label class="col-sm-4 col-form-label">Date of Birth<span class="text-danger">*</span></label>	
+												<div class="col-sm-12">
+												<input type = "date" id = "dateofbirth" class="form-control border border-dark" placeholder="DD/MM/YYYY" th:field="*{dob}" required="required"  minlength="2" maxlength="45"/  >
+												</div>								 
+										</div>
+										
+										
+										<div class="form-row  design">
+												<label class="col-sm-2 ">Gender<span class="text-danger">*</span></label>
+												<div class="col-sm-10">
+												<div class="form-check form-check-inline  ">
+  														<input class="form-check-input border border-dark" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Males" th:field="*{gender}">
+  														<label class="form-check-label" for="inlineRadio1">Male</label>
+												</div>
+												<div class="form-check form-check-inline">
+  														<input class="form-check-input border border-dark" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="Female" th:field="*{gender}">
+  														<label class="form-check-label" for="inlineRadio2">Female</label>
+												</div>
+												<div class="form-check form-check-inline">
+  														<input class="form-check-input border border-dark" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="Transgender" th:field="*{gender}">
+  														<label class="form-check-label" for="inlineRadio3">Transgender</label>
+												</div>
+ 				 	 							</div>
+ 				 						</div>	
+ 				
+										<div class="form-group row design">
+											<label class="col-sm-4 col-form-label">Email<span class="text-danger">*</span></label>
+											<div class="col-sm-12">
+												<input type="email" th:field="*{email}" class="form-control border border-dark"
+												required="required" maxlength="45" minlength="8" placeholder="Enter a valid email id" />
+											</div>
+										</div>
+				
+										<div class="form-group row design">
+											<label class="col-sm-4 col-form-label">Phone Number<span class="text-danger">*</span></label>
+											<div class="col-sm-12">
+												<input type="number" th:field="*{phoneNumber}" class="form-control border border-dark"
+												required="required" maxlength="15" minlength="8" />
+											</div>
+										</div>
+				
+										<div class="form-group row design">
+												<label class="col-sm-6 col-form-label">Unique Disability ID(UDID)<span class="text-danger">*</span></label>
+												<div class="col-sm-12">
+													<input type="number" th:field="*{udid}" class="form-control border border-dark" placeholder="XX XXXXXX XXX XXXX XXX"
+													required="required" maxlength="15" minlength="8" />
+												</div>
+										</div>
+										
+										<div class="form-group row design">
+											<label class="col-sm-6 col-form-label">Aadhaar Number<span class="text-danger">*</span></label>
+											<div class="col-sm-12">
+												<input type="number" th:field="*{aadhaar}" class="form-control border border-dark" placeholder="XXXX XXXX XXXX"
+												required="required" maxlength="15" minlength="8" />
+											</div>
+										</div>
+										
+										<div class="form-group row design" style="display:none;"   id="otherAnswer" autofocus  >
+											<label class="col-sm-6 col-form-label" style="display:none;"   id="otherAnswer1"  autofocus >Guardian Relationship<span class="text-danger">*</span></label>
+											<div class="form-row align-items-center" style="display:none;"   id="otherAnswer2"  autofocus>
+    											<div class="col-auto my-1" >
+     							       				<select class="custom-select mr-lg-8 border border-dark" th:field="*{guardianRelationship}"   >
+     							       					
+            											<option  th:value="Father" th:text="Father"></option>
+        												<option  th:value="Mother" th:text="Mother"></option>
+        												<option  th:value="Husband" th:text="Husband"></option>
+      												</select>
+    											</div>
+											</div>	
+										</div>
+				
+										<div class="form-group row design" autofocus>
+											<label class="col-sm-6 col-form-label" style="display:none;"   id="otherAnswer3" autofocus>Guardian Name<span class="text-danger">*</span></label>
+												 
+											<div class="col-sm-12" autofocus>
+												<input type="text" th:field="*{guardianName}" class="form-control border border-dark" placeholder="Enter your name"
+												 maxlength="15" minlength="8" style="display:none;"   id="otherAnswer4" autofocus/>
+											</div>
+										</div>
+										
+										<div class="form-group row design" autofocus >
+											<label class="col-sm-6 col-form-label" style="display:none;"   id="otherAnswer5" autofocus>Guardian Aadhaar Number<span class="text-danger">*</span></label>
+											<div class="col-sm-12">
+												<input type="number" th:field="*{guardianAadhaar}" class="form-control border border-dark" placeholder="XXXX XXXX XXXX"
+												 maxlength="15" minlength="8" style="display:none;"   id="otherAnswer6" autofocus/>
+											</div>
+										</div>
+										
+										<div class="form-group row design">
+											<label class="customerRegistrationAddress col-sm-6 col-form-label">Customer Residential Address</label>
+										</div>
+				
+										<div class="form-row design">
+    											<div class="form-group col-md-6">
+      												<label for="inputEmail4">Address Line1<span class="text-danger">*</span></label>
+      												<input type="text" th:field="*{addressLine1}" class="form-control border border-dark"
+													 maxlength="64" minlength="3" placeholder="Enter the street address line 1" />
+   												</div>
+   												
+    											<div class="form-group col-md-6">
+      												<label for="inputPassword4">Address Line2<span class="text-danger">*</span></label>
+      												<input type="text" th:field="*{addressLine2}" class="form-control border border-dark"
+													maxlength="64" placeholder="Enter the street address line 2"/>
+    											</div>
+ 				 						</div>
+ 				 
+ 				 						<div class="form-row design">
+    										<div class="form-group col-md-6">
+      											<label for="inputEmail4">City<span class="text-danger">*</span></label>
+      											<input type="text" th:field="*{city}" class="form-control border border-dark"
+												required="required" maxlength="64" minlength="3" onkeydown="return /[a-z]/i.test(event.key)" /> />
+   											</div>
+    										<div class="form-group col-md-6">
+      											<label for="inputPassword4">State<span class="text-danger">*</span></label>
+      											<input type="text" th:field="*{state}" class="form-control border border-dark"
+												maxlength="45" minlength="3" list="listStates" autocomplete="new-password" />
+												<datalist id="listStates"></datalist>
+						 					</div>
+										</div>	
+				
+										<div class="form-row design">
+    										<div class="form-group col-md-6">
+      											<label for="inputEmail4">Country<span class="text-danger">*</span></label>
+      											<select class="form-control border border-dark" th:field="*{country}">
+												<th:block th:each="country : ${listCountries}">
+												<option th:value="${country.id}">[[${country.name}]]</option>
+												</th:block>
+												</select>
+   											</div>
+   										  											
+    										<div class="form-group col-md-6">
+      											<label for="inputPassword4">Zipcode<span class="text-danger">*</span></label>
+      											<input type="number" th:field="*{postalCode}" class="form-control border border-dark"
+												maxlength="10" minlength="2" />											
+ 											</div>
+										</div>	
+				
+										<div class="form-group row design ">
+												<label class="customerRegistrationAddress col-sm-6 col-form-label">Create your Credentials</label>
+										</div>
+				
+										<div class="form-row design">
+    											<div class="form-group col-md-12">
+      												<label for="inputEmail4">Username<span class="text-danger">*</span></label>
+      												<input type="text" th:field="*{cName}" class="form-control border border-dark"
+													required="required" maxlength="64" minlength="3" placeholder="Create an unique username" />
+   												</div>
+										</div>
+										
+										<div class="form-group row design">
+												<div class="form-group col-md-12">
+      													<label for="inputPasswordl4">Password<span class="text-danger">*</span></label>
+														<input type="password" th:field="*{password}" class="form-control border border-dark"
+															required="required" maxlength="15" minlength="6"
+															oninput="checkPasswordMatch(document.getElementById('confirmPassword'))"
+					 									/>
+					 							</div>
+										</div>	
+										
+										<div class="form-group row design">
+												<div class="form-group col-md-12">
+      												<label for="inputConfirmPassword4">Confirm Password<span class="text-danger">*</span></label>
+													<input type="password" id="confirmPassword" class="form-control border border-dark"
+														required="required" maxlength="15" minlength="6"
+														oninput="checkPasswordMatch(this)"
+					 								/>
+												</div>
+										</div>
+						
+										<div class="form-group row design">
+    									    <div class="col-md-10 ">
+      												<div class="form-check">
+        												<input class="form-check-input border border-dark" type="checkbox" id="gridCheck1">
+    										            <p> I accept the<a class="terms1" th:href="@{/terms}">Terms of use</a> and<a class="policy1" th:href="@{/privacypolicy}">Privacy Policy</a></p> 
+        									      </div>
+    										</div>
+  										</div>		
+  																										
+										<div class="text-center">
+											<input type="Submit" value="Submit" class="btn btn-primary" />
+											<input type="button" value="Cancel" class="btn btn-secondary" id="buttonCancel" />
+										</div>
+										
+						</div>
+						</form>
+				</div>
+	
+	</div>
+	</div>
+	
+	
+
+
+<script type="text/javascript">
+	contextPath = "[[@{/}]]";
+	
+	function checkEmailUnique(form) {
+		url = contextPath + "customers/check_unique_email";
+		customerEmail = $("#email").val();
+		csrfValue = $("input[name='_csrf']").val();
+		
+		params = {email: customerEmail, _csrf: csrfValue};
+		
+		$.post(url, params, function(response) {
+			if (response == "OK") {
+				form.submit();
+			} else if (response == "Duplicated") {
+				showWarningModal("There is another cusotmer having the email " + customerEmail);
+			} else {
+				showErrorModal("Unknown response from server");
+			}
+		}).fail(function() {
+			showErrorModal("Could not connect to the server");
+		});
+		
+		return false;
+	}
+	
+	
+  
+	
+</script>
+
+<script type="text/javascript" th:src="@{/js/common_modal.js}"></script>
+<script type="text/javascript" th:src="@{/js/common_customer_form.js}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("input[type='radio']").change(function() {
+                if ($(this).val() == "Others") {
+                    $("#otherAnswer").show();
+                    $("#otherAnswer1").show();
+                    $("#otherAnswer2").show();
+                    $("#otherAnswer3").show();
+                    $("#otherAnswer4").show();
+                    $("#otherAnswer5").show();
+                    $("#otherAnswer6").show();
+                    
+                } else {
+                    $("#otherAnswer").hide();
+                    $("#otherAnswer1").hide();
+                    $("#otherAnswer2").hide();
+                    $("#otherAnswer3").hide();
+                    $("#otherAnswer4").hide();
+                    $("#otherAnswer5").hide();
+                    $("#otherAnswer6").hide();
+                   
+                }
+            });
+        });
+    </script>
+    
+    
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script>
+	$(function() {
+		$("#datepicker").datepicker({ dateFormat: "d- M- y" });
+	});
+	</script>	
+	
+	
+</body>
+</html>

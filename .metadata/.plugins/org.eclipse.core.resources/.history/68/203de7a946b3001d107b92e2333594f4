@@ -1,0 +1,118 @@
+h2 {
+    font-family: kaisei decol;
+    font-size: 2em;
+    color:	#000000;
+    
+    }
+    
+ h6{
+    font-family: kaisei decol;
+     color:	black;
+    
+    }
+.registeringfor opt1 opt2
+{
+color:#000000;
+text-align:left;
+vertical-align:text-top;
+font-size:18px;
+font-family:Inter;
+left:26px;
+top:89px;
+width:300px;
+height:18px;
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+display: inline;
+color:back;
+}
+
+.star
+{
+	color:red;
+	font-weight:bold;
+	display: inline;
+}
+.basicdetails
+{
+color:#171717;
+text-align:left;
+vertical-align:text-top;
+font-size:18px;
+font-family:Inter;
+left:17px;
+top:136px;
+
+position:absolute;
+line-height:auto;
+border-style:hidden;
+outline:none;
+font-weight:bold;
+}
+.design
+{
+color:#000000;
+
+font-size:15px;
+font-family:Inter;
+
+
+
+}
+.design1
+{
+color:#000000;
+
+font-size:15px;
+font-family:Inter;
+position:fixed;
+text-align:center;
+
+}
+
+.design2
+{
+color:#000000;
+
+font-size:15px;
+font-family:Inter;
+
+
+
+}
+input::placeholder {
+	font-size:18px;
+}
+
+.customerRegistrationAddress
+{
+color:#171717;
+text-align:left;
+vertical-align:text-top;
+font-size:18px;
+font-family:Inter;
+
+font-weight:bold;
+}
+
+.firstBlock
+{
+	position:fixed;
+}
+.lines1
+{
+	color:#454545;
+text-align:center;
+vertical-align:text-top;
+font-size:16px;
+font-family:Inter;
+line-height:auto;
+border-style:hidden;
+outline:none;
+width:800px;
+font-weight:bold;
+}
+
+

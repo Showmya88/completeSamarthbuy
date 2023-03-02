@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+ <link th:replace="fragments :: page_head(${pageTitle}, 'none')" />
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+</head>
+<body>
+<div class="container-fluid">
+	<div th:replace="navigation :: header_menu4"></div>
+
+	<div>
+			<br>
+			<h6>Home</h6>
+	</div>
+	<div class="container"></div>
+   
+	<div class="row justify-content-around">
+    
+  
+	
+	 <div class="col" th:each="cat : ${listCategories}">
+	<div th:if="${cat.allParentIDs== '-59-' or cat.allParentIDs== '-43-' }">
+	<img  class="images" src="./images/default.png"></img>
+	<p class="text"><a th:href="@{'/c/' + ${cat.alias}}">[[${cat.name}]]</a></p></div>
+	</div>
+
+	</div>
+
+</div>
+
+
+	
+
+	
+	
+	
+	
+
+	<footer>
+		<div th:replace="navigation :: footer_menu1"></div></footer>
+
+</body>
+</html>

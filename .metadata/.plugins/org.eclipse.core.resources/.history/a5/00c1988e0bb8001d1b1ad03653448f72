@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+ <link th:replace="fragments :: page_head(${pageTitle}, 'none')" />
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/navigation.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+
+</head>
+<body>
+<div class="container-fluid">
+	<div th:replace="navigation :: header_menu5"></div>
+
+	<div>
+			<br>
+			<h6><a style="color:#000000;" class="in1" th:href="@{/}">Home</a></h6>
+	</div>
+	<div class="container">
+    <div class="row">
+        
+        <div class="clo">
+           
+        <img  src="/images/trisha1.png" class="index2"/></div>
+    <div class="clo">
+        <img class="index2" src="/images/women1.png" class="index2"/></div>
+       
+        <br>
+    </div>
+    <div class="row mt-2">
+        <div class="clo">
+     <a th:href="@{/women}">
+    <image  class="png"src="./images/trending.JPG"></image></a></div>
+    
+    <div class="clo">
+    <a th:href="@{/bags}">
+    <image class="png"src="./images/new1.JPG"></image></a>
+   </div>
+   
+   </div>
+
+	
+  
+	
+	 
+
+</div>	
+	
+
+	<footer>
+		<div th:replace="navigation :: footer_menu"></div></footer>
+
+
+</body>
+</html>

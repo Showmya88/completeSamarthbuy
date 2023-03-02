@@ -1,0 +1,97 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Samarthbuy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<link rel="StyleSheet" href="frame_1.css" />
+		<link th:replace="fragments :: page_head('Shopme', 'none')" />
+		<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" /></head>
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+	</head>
+	<body>
+		<div id="content-container" >
+		
+			<div id="page_frame_1_ek1"  >
+				<div id="_bg__frame_1_ek2"  ></div>
+				<img src="images/skins/vector_4.png" id="vector_4" />
+				<div id="rectangle_102"  ></div>
+				
+				<div id="samarthbuy" >
+					<b>SAMARTHBUY</b>
+					</div>
+				<div id="sign_in_into_samarthbuy" >
+					Sign-in into SAMARTHBUY
+				</div>
+			
+				<div id="samarthbuy_is_an_online_e_commerce_platform_for_differently_abled_people__this_website_helps_them_to_purchase_products_in_less_price_" >
+					Samarthbuy is an online e-commerce platform for Differently Abled<br/>People. This website helps them to purchase products in less price.
+				</div>
+				
+				 <div th:replace="navigation :: footer_menu"></div>
+				
+				<form th:action="@{/login}" method="post">
+				<div th:if="${param.error}" id="bad_credentials">
+					<p class="text-danger" id="bad_credentials">[[${session.SPRING_SECURITY_LAST_EXCEPTION.message}]]</p>
+				</div>
+				<div th:if="${param.logout}" id="bad_credentials">
+					<p class="text-warning" id="bad_credentials">You have been logged out.</p>
+				</div>
+				
+		
+				<div id="googlefb">
+					or Sign in using <a th:href="@{/oauth2/authorization/google}"><img src="images/login1/google.jpg"/></a>
+				</div>
+				
+				<div id="email">
+				 Email</div>
+				 <div id="txt1">
+				   <input type="text" name="email" class="form-control " placeholder="Enter your email" required />
+				</div>
+				<div id="pwd">Password</div>
+				<div id="txt2">
+				<input type="password" name="password" class="form-control" placeholder="Enter your password" required />
+				</div>
+				<div id="remember-me">
+								<input type="checkbox" name="remember-me" />&nbsp;Remember Me
+				</div>
+				<div id="rectangle_98">
+				<input type="submit" value="SIGN IN" class="sign-in"/>
+				</div>
+				<div id="forgot_password">
+				<a th:href="@{/forgot_password}">Forgot Password</a>
+				</div>
+				<div id="sign_up">
+					Don't have an account? <a th:href="@{/register}"><b>Sign up</b></a>
+				</div>			
+		</div>
+				
+				
+				</form>
+				
+				
+				
+			
+				<div id="group"  >
+					<img src="images/skins/vector.png" id="vector" />
+					<img src="images/skins/vector_ek1.png" id="vector_ek1" />
+
+				</div>
+
+				<div id="group_8"  >
+					<img src="images/skins/_180026880_1.png" id="_180026880_1" />
+					<img src="images/skins/pngwing_2.png" id="pngwing_2" />
+					<img src="images/skins/pngwing_3.png" id="pngwing_3" />
+					<img src="images/skins/pngwing_4.png" id="pngwing_4" />
+					<img src="images/skins/imagechldpng_1.png" id="imagechldpng_1" />
+					<img src="images/skins/pngwing_1.png" id="pngwing_1" />
+
+				</div>
+
+			</div>
+		
+		
+	</body>
+</html>
