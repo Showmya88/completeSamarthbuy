@@ -1,7 +1,5 @@
 package com.shopme.shoppingcart;
 
-import java.text.ParseException;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,10 +55,6 @@ public class ShoppingCartRestController {
 			return String.valueOf(subtotal);
 		} catch (CustomerNotFoundException ex) {
 			return "You must login to change quantity of product.";
-		} catch (ShoppingCartException ex) {
-			return ex.getMessage();
-		} catch (ParseException ex) {
-			return ex.getMessage();
 		}	
 	}
 	

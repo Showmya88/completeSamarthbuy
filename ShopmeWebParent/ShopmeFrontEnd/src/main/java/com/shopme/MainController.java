@@ -42,15 +42,17 @@ public class MainController {
 		return "terms";
 	}
 	@GetMapping("/browserpolicy")
-	public String vieWbrowserpolicy()
+	public String viewbrowswerpolicy()
 	{
 		return "browserpolicy";
 	}
+	
 	@GetMapping("/privacypolicy")
 	public String viewprivacypolicy()
 	{
 		return "privacypolicy";
 	}
+	
 	
 	@GetMapping("/login")
 	public String viewLoginPage() {
@@ -100,6 +102,9 @@ public class MainController {
 		model.addAttribute("listCategories", listCategories);
 		return "brand";
 	}
+	
+	  
+
 	
 	
 }

@@ -1,25 +1,40 @@
-<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head ><link th:replace="fragments :: page_head(${pageTitle}, 'none')" />
-<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
-<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" /></head>
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Samarthbuy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<link rel="StyleSheet" href="frame_1.css" />
+		<link th:replace="fragments :: page_head('Shopme', 'none')" />
+		<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
+		<link rel="stylesheet" type="text/css" th:href="@{/frame1.css}" /></head>
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+	</head>
 <body>
-<div class="container-fluid text-center">
-	<div th:replace="navigation :: header_menu4"></div>
-	
-	<div>&nbsp;</div>
-
-	<div th:if="${title != null}">
-		<h2>[[${title}]]</h2>
-	</div>
+		<div id="content-container" >
 		
-	<div th:if="${message != null}">
-		<h3>[[${message}]]</h3>
-	</div>
+			<div id="page_frame_1_ek1"  >
+				<div id="_bg__frame_1_ek2"  ></div>
+				<img src="images/skins/vector_4.png" id="vector_4" />
+				<div id="rectangle_202"  ></div>
+				<div id="samarthbuy1" >
+					<b>SAMARTHBUY</b>
+				</div>
+				<div th:if="${title != null}">
+					
+					<div id="invalid">[[${title}]]</div>
+				</div>
+				<div th:if="${message != null}" id="valid">
+					<div id="thumb">
+					<img src="images/thumb1.jpg"  />
+					</div><br></br>
+					<h3 id="valid">[[${message}]]</h3>
+				</div>
+			</div>
+		</div>
 	
-	<div>&nbsp;</div>
 	
-	<footer><div th:replace="navigation :: footer_menu"></div></footer>
-</div>	
 </body>
 </html>

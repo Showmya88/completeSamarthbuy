@@ -1,15 +1,44 @@
-<!DOCTYPE<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head><link th:replace="fragments :: page_head('Shopme', 'none')" />
 <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
-	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
 <link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
-<link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/frame1.css}" />
+</head>
+<style>
+    .box{
+    text-align:center;
+    
+    width:100%;
+    padding:10px;
+    font-weight:bold;
+    position:sticky;
+    top:0;
+    background-color:white;
+    font-size:20px;
+    }
+    
+    body{
+    
+      background-color:white;
+      margin:auto;
+      width: 65%;
+      height:770%;
+      border: 3px solid black;
+      padding: 10px;
+     outline:  gray solid 50px;
+     display:flex;
+      }
+ button{
+  }
+</style>
 </head>
 <body >
-<div class="policylink browser">
 <div class="container-fluid">
-<h2 class="policy">SAMARTHBUY:Browser policy</h2>
+
+<div class="box" ><h2>SAMARTHBUY:Browser policy</h2></div>
+ 
 <p>In this section, we inform you on the way of collection and processing of personal data in connection
 with the use of these websites.<br><br>
 
@@ -106,10 +135,10 @@ campaigns. We may also share this information with third parties.<br>
  Google Analytics) or displays third-party website content, for example YouToube or Facebook. This results in the acceptance of
  cookies from these third party services.
 
-</p>
 <div class="d-grid gap-2 d-md-flex justify-content-md-center">
- <button type="button"style="background-color:#6433D7;color:aliceblue;width:136px" class="btn  badge-pill btn-xxl" onclick="history.back()">Back</button></div>
-</div>		
-</div>	
+ <button type="button" class="btn btn-outline-primary btn-lg"><a th:href="@{/login}">back</a></button></div>
+		
+
+	</div>	
 </body>
 </html>

@@ -18,6 +18,8 @@ public class Customer extends AbstractAddressWithCountry {
 	@Column(nullable = false, length = 64)
 	private String password;
 	
+	
+	
 	@Column(name = "verification_code", length = 64)
 	private String verificationCode;	
 	
@@ -32,6 +34,10 @@ public class Customer extends AbstractAddressWithCountry {
 	
 	@Column(name = "reset_password_token", length = 30)
 	private String resetPasswordToken;
+	
+	
+	
+	
 
 	public Customer() {
 	}
@@ -99,5 +105,16 @@ public class Customer extends AbstractAddressWithCountry {
 	public void setResetPasswordToken(String resetPasswordToken) {
 		this.resetPasswordToken = resetPasswordToken;
 	}
+
+	
+	
+
+
+	
+
+	
+
+	
+	
 
 }
