@@ -13,23 +13,21 @@
 
 	<div>
 			<br>
-			<h6>Home</h6>
+			<h6><a style="color:#000000;" class="in1" th:href="@{/}">Home</a>&nbsp;<i class="fas fa-chevron-right"></i> <a style="color:#000000;" class="in1" th:href="@{/women}">Women</a></h6>
 	</div>
-	<div class="container"></div>
+	<div class="container">
    
-	<div class="row justify-content-around">
+<div class="row justify-content-around">
     
-  
-	
 	 <div class="col" th:each="cat : ${listCategories}">
 	<div th:if="${cat.allParentIDs== '-59-' or cat.allParentIDs== '-43-' }">
 	<img  class="images" src="./images/default.png"></img>
-	<p class="text"><a th:href="@{'/c/' + ${cat.alias}}">[[${cat.name}]]</a></p></div>
-	</div>
-
-	</div>
+	<p class="text"><b><a style="color:#06004E; font-size:23px;" th:href="@{'/c/' + ${cat.alias}}">[[${cat.name}]]</a></b></p></div>
+</div>
 
 </div>
+</div>
+
 
 
 	
@@ -40,7 +38,7 @@
 	
 
 	<footer>
-		<div th:replace="navigation :: footer_menu1"></div></footer>
+		<div th:replace="navigation :: footer_menu"></div></footer>
 
 </body>
 </html>

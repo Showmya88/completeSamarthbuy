@@ -14,19 +14,19 @@
 <div class="container-fluid" th:with="redirectedFromCheckoutPage = ${param.redirect != null && param.redirect[0] == 'checkout'}">
 	<div th:replace="navigation :: header_menu4"></div>
 
-	
-	<div><h6 th:text="${redirectedFromCheckoutPage} ? '' : ' Home > MyAccount > Address Book'"></h6></div>
+	<div>&nbsp;</div>
+	<h6><a style="color:#000000;" class="in1" th:href="@{/}">Home </a> <i class="fas fa-chevron-right"></i> <a style="color:#000000;" class="in1" th:href="@{/account_details}"> MyAccount </a> <i class="fas fa-chevron-right"></i> <a style="color:#000000;" class="in1" th:href="@{/address_book}"> Address Book</a></h6>
 
 		<div><h2 class="addressbook" th:text="${redirectedFromCheckoutPage} ? 'Choose a Shipping Address' : ' Address Book'"></h2></div>
 		<div class="row ">
     <div class="col-sm">
     <div class="addadress m-3">
 			<a  th:unless="${param.redirect}" th:href="@{/address_book/new}"  >+Add New Address</a>
-			<a th:if="${redirectedFromCheckoutPage}" th:href="@{/address_book/new(redirect=checkout)}" class="h4">+Add New Address</a>
+			<a th:if="${redirectedFromCheckoutPage}" th:href="@{/address_book/new(redirect=checkout)}" class="h4">Add New Address</a>
 		</div></div>
 		
 	<div class="col-sm">
-			<div class="card cart1 m-3" th:classappend="${usePrimaryAddressAsDefault ? 'bg-#FFFFFF' : ''}">
+			<div class="card m-3" th:classappend="${usePrimaryAddressAsDefault ? 'bg-#FFFFFF' : ''}">
 				
 					
 							<div class="card-body">
@@ -66,7 +66,7 @@
 		<th:block th:each="address, status: ${listAddresses}">
 		
     <div class="col-sm">
-			<div class="card cart1 m-3" th:classappend="${address.defaultForShipping ? 'bg-#FFFFFF' : ''}">
+			<div class="card m-3" th:classappend="${address.defaultForShipping ? 'bg-#FFFFFF' : ''}">
 				
 					
 						
@@ -96,8 +96,8 @@
 								<b><a  th:unless="${param.redirect}"  title="Edit this address"
 									th:href="@{'/address_book/edit/' + ${address.id}}">Edit &nbsp;|</a>
 									
-								<a th:if="${redirectedFromCheckoutPage}" title="Edit this address"
-									th:href="@{'/address_book/edit/' + ${address.id} + '?redirect=checkout'}">Edit&nbsp;</a>
+								<a th:if="${redirectedFromCheckoutPage}" class="fas fa-edit icon-dark" title="Edit this address"
+									th:href="@{'/address_book/edit/' + ${address.id} + '?redirect=checkout'}"></a>
 																		
 								&nbsp;
 								<a   title="Delete this address"
