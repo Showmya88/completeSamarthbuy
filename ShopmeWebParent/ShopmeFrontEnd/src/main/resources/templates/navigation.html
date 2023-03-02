@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=devie-width">
 <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
 	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
-<link rel="stylesheet" type="text/css" th:href="@{/navigation.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
 <link rel="stylesheet" type="text/css" th:href="@{/menu.css}" />
 </head>
 <body>
@@ -104,6 +104,59 @@
 	</nav>
 </div>
 
+<div th:fragment="header_menu2">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light id=navbar">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar, #searchNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="topNavbar">
+			<ul class="navbar-nav">	
+				<li class="nav-item">		
+				<a class="navbar-brand" href="">
+				<img src="images/small_samarthbuy.JPG" />						
+				</a>	
+				</li>		
+				<li class="nav-item my-3 ">
+					<a class="nav-link " href="">Women</a>
+				</li>
+				<li class="nav-item my-3">
+					<a class="nav-link" href="">Men</a>
+				</li>				
+				<li class="nav-item my-3">
+					<a class="nav-link" href="">Kids</a>
+				</li>
+				<li class="nav-item my-3">
+					<a class="nav-link" href="">Brands</a>
+				</li>
+				<li class="nav-item">
+					<div th:replace="navigation :: search_nav"></div>
+				</li>	
+		
+		 </ul>
+		 <ul class="navbar-nav ml-auto">
+       
+        <li class="nav-item  my-3 ">
+        <a class="nav-link" th:href="@{/orders}"> <i class='far fa-list-alt' style='font-size:18px'></i>Orders</a>
+        </li>
+        
+        <li class="nav-item  my-3" >
+        <a class="nav-link" href="@{/cart}"><i class='fas fa-shopping-bag' style='font-size:18px'></i>Cart</a>
+        </li>
+      
+       <th:block sec:authorize="!isAuthenticated()">
+				<li class="nav-item my-3">
+					<i class="fa fa-user" style='font-size:18px'></i>
+					<a class="nav-link" th:href="@{/login}">Login</a>
+				</li>
+				
+				
+				</th:block>
+          	
+			</ul>
+		</div>
+		
+	</nav>
+</div>
 
 <div th:fragment="header_menu3" class="flex-container">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light id=navbar " >
@@ -111,12 +164,13 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="topNavbar" >
-			<ul class="navbar-nav" >	
-				<li class="nav-item" >		
-				
+		<ul class="navbar-nav">	
+				<li class="nav-item">		
+				<a class="navbar-brand" href="">
 				<img src="images/small_samarthbuy.JPG" />						
-					
-				</li>		
+				</a>	
+				</li>
+			
 				<li class="nav-item my-3 "  >
 					<a class="nav-link dropdown-toggle"  th:href="@{/men}">Men</a>
 						
@@ -154,9 +208,9 @@
 		 	</ul>
 		 	<ul class="navbar-nav ml-auto">
        
-        		<li class="nav-item  my-3 ">
-             		<div class="dropdown" style="float:left;">
-						<a class="nav-link" data-toggle="dropdown" href=""><i class="fas fa-user" style='font-size:18px'></i>Profile</a>
+        		<li class="nav-item  my-3 "><i class="fas fa-user" style='font-size:18px'></i>
+             		<div class="dropdown" style="float:right;">
+						<a class="nav-link" data-toggle="dropdown" href="">Profile</a>
 					 		<div class="dropdown-content" style="left:0;">
 					 			
 								<div class="col1">			
@@ -168,7 +222,7 @@
 										
 										<a class="nav-link1" th:href="@{/reviews}">Reviews</a>
 										<a class="nav-link1" th:href="@{/orders}">Orders</a>
-										<a class="nav-link1" href="javascript: document.logoutForm.submit()">Logout</a>
+									<a class="nav-link1" href="javascript: document.logoutForm.submit()">Logout</a>
 									
 									</th:block>
 								</div>	
@@ -179,14 +233,14 @@
 														
 								<a class="nav-link1" th:href="@{/register}">Register</a>
 								
-								<a class="nav-link1" href="javascript: document.logoutForm.submit()">Logout</a>
+			
 								</th:block>
 								</div>
 			      			</div>
 			      			
 			      	</div>
         		</li>
-        		<li class="nav-item  my-3" ><i class="fa fa-heart " style='font-size:18px'></i>
+        		<li class="nav-item  my-3" ><i class="fas fa-shopping-cart" style='font-size:18px'></i>
         			<a class="nav-link  my-3 " th:href="@{/orders}" >Shipping</a>
         		</li>
         
@@ -204,170 +258,6 @@
 	</nav>	
 	
 </div>
-<div th:fragment="header_menu5" class="flex-container">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light id=navbar " >
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar, #searchNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="topNavbar" >
-			<ul class="navbar-nav" >	
-				<li class="nav-item" >		
-				<li class="nav-item my-3">
-				<div id="samarthbuy_logo" >
-					SAMARTHBUY
-				</div>						
-				</li>	
-				
-				  <li class="nav-item my-3">
-					<div class="dropdown" style="float:left;">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Women</a>
-					 <div class="dropdown-content" style="left:0;">
-					 	<div class="col" th:each="cat : ${listCategories}">
-					<div class="col" th:if="${cat.allParentIDs== '-59-' or cat.allParentIDs== '-43-'}">
-						<a th:href="@{'/c/' + ${cat.alias}}">
-
-			
-    					[[${cat.name}]]</a>
-      				</div></div></div></div>
-				</li>
-						
-				<li class="nav-item my-3 "  >
-					<div class="dropdown" style="float:left;">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Men</a>
-					 <div class="dropdown-content" style="left:0;">
-					 	<div class="col" th:each="cat : ${listCategories}">
-					<div class="col" th:if="${cat.allParentIDs== '-8-'}">
-						<a th:href="@{'/c/' + ${cat.alias}}">
-
-			
-    					[[${cat.name}]]</a>
-      				</div></div></div></div>	
-				</li>
-				<li class="nav-item my-3 "  >
-					<div class="dropdown" style="float:left;">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Kids</a>
-					 <div class="dropdown-content" style="left:0;">
-					 	<div class="col" th:each="cat : ${listCategories}">
-					<div class="col" th:if="${cat.allParentIDs== '-62-' or cat.allParentIDs== '-10-'}">
-						<a th:href="@{'/c/' + ${cat.alias}}">
-
-			
-    					[[${cat.name}]]</a>
-      				</div></div></div></div>	
-				</li>
-								
-				
-				<li class="nav-item my-3">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Brands</a>
-					
-				</li>
-				
-				
-				<li >
-					<div th:replace="navigation :: search_nav1" ></div>
-				</li>	
-		
-		 	</ul>
-		 	<ul class="navbar-nav ml-auto">
-       
-        		<li class="nav-item  my-3 ">
-             		<div class="dropdown" style="float:left;">
-						<a class="nav-link" data-toggle="dropdown" href=""><i class="fas fa-user" style='font-size:18px'></i>Profile</a>
-					 		<div class="dropdown-content" style="left:0;">
-					 			
-								<div class="col1">			
-					 				<th:block sec:authorize="isAuthenticated()">
-					 				
-					 					<a class="nav-link1 "  th:href="@{/account_details}" 
-										sec:authentication="principal.fullName"></a>
-										<a class="nav-link1" th:href="@{/address_book}">Address Book</a>
-										
-										<a class="nav-link1" th:href="@{/reviews}">Reviews</a>
-										<a class="nav-link1" href="javascript: document.logoutForm.submit()">Logout</a>
-									
-									</th:block>
-								</div>	
-			      				
-			      				<div class="col1">
-			      				<th:block sec:authorize="!isAuthenticated()">
-								<a class="nav-link1" th:href="@{/login}">Login</a>
-														
-								<a class="nav-link1" th:href="@{/register}">Register</a>
-								
-								<a class="nav-link1" href="javascript: document.logoutForm.submit()">Logout</a>
-								</th:block>
-								</div>
-			      			</div>
-			      			
-			      	</div>
-        		</li>
-        		<li class="nav-item  my-3" ><i class="fa fa-heart " style='font-size:18px'></i>
-        			<a class="nav-link  my-3 " th:href="@{/orders}" >ORDERS</a>
-        		</li>
-        
-        		<li class="nav-item  my-3 "><i class="fa fa-shopping-bag" style='font-size:18px'></i>
-       				 <a class="nav-link  my-3 " th:href="@{/cart}" >CART</a>
-        		</li>
-        		
-        		
-        	</ul>	
-			
-      		</div>
-          
-      
-        		
-	</nav>	
-</div>
-
-
-
-<div th:fragment="search_nav" class="row">
-	<div class="col-md">
-		
-		<th:block sec:authorize="isAuthenticated()">	
-		<form th:action="@{/logout}" method="post" th:hidden="true" name="logoutForm">
-			<input type="submit" value="Logout" />
-		</form>
-		</th:block>
-		
-		<nav class="navbar navbar-expand-sm bg-light">
-			<div class="collapse navbar-collapse" id="searchNavbar">
-				<form class="form-inline" th:action="@{/search}" method="get">
-					<input type="search" name="keyword" class="form-control mr-sm-2"
-						th:value="${searchKeyword}" 
-						placeholder="Search for products,brands,sellers" required />
-					<input type="submit" value="Search" class="btn btn-outline-success" placeholder="Search for products,brands and more" />
-				</form>
-						
-			</div>
-		</nav>
-	</div>
-</div>
-<div th:fragment="search_nav1" class="row">
-	<div class="col-md">
-		
-		<th:block sec:authorize="isAuthenticated()">	
-		<form th:action="@{/logout}" method="post" th:hidden="true" name="logoutForm">
-			<input type="submit" value="Logout" />
-		</form>
-		</th:block>
-		
-		<nav class="navbar navbar-expand-sm bg-light">
-			<div class="collapse navbar-collapse" id="searchNavbar">
-				<form class="form-inline" th:action="@{/search}" method="get">
-					<div>
-					
-					<input type="search" name="keyword" class="nav-search"
-						th:value="${searchKeyword}" 
-						placeholder="Search for products,brands,sellers" required />
-					</div>	&nbsp;&nbsp;
-					<input type="submit" value="Search" class="btn btn-outline-success" placeholder="Search for products,brands and more" />
-				</form>
-						
-			</div>
-		</nav>
-	</div>
-</div>
 
 
 <div th:fragment="header_menu4" class="flex-container">
@@ -379,7 +269,7 @@
 		<ul class="navbar-nav">	
 				<li class="nav-item">		
 				<a class="navbar-brand" th:href="@{/}">
-				<img src="./images/samar.png" />						
+				<img src="images/SAMARTH buy.png" />						
 				</a>	
 				</li>
 				<li>&nbsp;<li>
@@ -497,7 +387,7 @@
 	<div class="col-md">
 		
 		<th:block sec:authorize="isAuthenticated()">	
-		<form th:action="@{/login}" method="post" th:hidden="true" name="logoutForm">
+		<form th:action="@{/logout}" method="post" th:hidden="true" name="logoutForm">
 			<input type="submit" value="Logout" />
 		</form>
 		</th:block>
@@ -516,67 +406,33 @@
 	</div>
 </div>
 
-
-
-
-
-<div th:fragment="footer_menu7" class="text-center">
-	
-		<div th:fragment="footer7" class="base">
-			[[${COPYRIGHT}]]</div>
-			<div th:fragment="footer_menu7" class="base1" >
-						<a class="nav-link2" th:href="@{/terms}">Terms of use</a>
-						|
-						<a class="nav-link2" th:href="@{/privacypolicy}">Privacy Policy</a>
-						|
-						<a class="nav-link2" th:href="@{/browserpolicy}">Browser Policy</a>	
-								
-			</div>
-		</div>
-
-<div th:fragment="footer_menu8" class="text-center">
-	
-		<div th:fragment="footer8" class="t">
-			[[${COPYRIGHT}]]</div>
-			<div th:fragment="footer_menu8" class="t1" >
-						<a class="nav-link2" th:href="@{/terms}" name="terms">Terms of use</a>
-						|
-						<a class="nav-link2" th:href="@{/privacypolicy}" name="privacy">Privacy Policy</a>
-						|
-						<a class="nav-link2" th:href="@{/browserpolicy}">Browser Policy</a>	
-								
-			</div>
-		</div>
+<div th:fragment="search_nav1" class="row">
+	<div class="col-md">
 		
-<div th:fragment="footer_menu9" class="text-center">
-	
-		<div th:fragment="footer9" class="reg">
-			[[${COPYRIGHT}]]<br>
-			
-						<a class="reg" th:href="@{/terms}" name="terms">Terms of use</a>
-						|
-						<a class="reg" th:href="@{/privacypolicy}" name="privacy">Privacy Policy</a>
-						|
-						<a class="reg" th:href="@{/browserpolicy}">Browser Policy</a>	
-			
-		</div>		
-	</div>	
-	
-	<div th:fragment="footer_menu1" class="text-center">
-	
-		<div th:fragment="footer1" class="t">
-			[[${COPYRIGHT}]]</div>
-			<div th:fragment="footer_menu1" class="t1" >
-						<a class="nav-link2" th:href="@{/terms}" name="terms">Terms of use</a>
-						|
-						<a class="nav-link2" th:href="@{/privacypolicy}" name="privacy">Privacy Policy</a>
-						|
-						<a class="nav-link2" th:href="@{/browserpolicy}">Browser Policy</a>	
-								
-			</div>
-		</div>
+		<th:block sec:authorize="isAuthenticated()">	
+		<form th:action="@{/logout}" method="post" th:hidden="true" name="logoutForm">
+			<input type="submit" value="Logout" />
+		</form>
+		</th:block>
 		
-		<div th:fragment="footer_menu" class="text-center">
+		<nav class="navbar navbar-expand-sm bg-light">
+			<div class="collapse navbar-collapse" id="searchNavbar">
+				<form class="form-inline" th:action="@{/search}" method="get">
+				<button type="submit" style="background-color:#C2DAFF;"  class="btn btn-outline-success"><i class="fas fa-search"></i></button>
+				
+					<input type="search" name="keyword" style="background-color:#C2DAFF;" class="form-control mr-sm-2"
+						th:value="${searchKeyword}" 
+						placeholder="Search for products..." required />
+					</form>
+						
+			</div>
+		</nav>
+	</div>
+</div>
+
+
+
+<div th:fragment="footer_menu" class="text-center">
 	
 		<div th:fragment="footer" class="base">
 
@@ -590,7 +446,6 @@
 		</div>
 </div>
 	
-		
 </body>
 </html>									
 					

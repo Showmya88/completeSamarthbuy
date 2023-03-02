@@ -46,7 +46,7 @@ public class ForgotPasswordController {
 			model.addAttribute("error", "Could not send email");
 		}
 		
-		return "customer/forgot_password_form1";
+		return "customer/forgot_password_form";
 	}
 	
 	private void sendEmail(String link, String email) 
@@ -99,8 +99,8 @@ public class ForgotPasswordController {
 			customerService.updatePassword(token, password);
 			
 			model.addAttribute("pageTitle", "Reset Your Password");
-			
-			model.addAttribute("message", "Password Changed!   Your password had been changed successfully");
+			model.addAttribute("title", "Reset Your Password");
+			model.addAttribute("message", "You have successfully changed your password.");
 			
 		} catch (CustomerNotFoundException e) {
 			model.addAttribute("pageTitle", "Invalid Token");
