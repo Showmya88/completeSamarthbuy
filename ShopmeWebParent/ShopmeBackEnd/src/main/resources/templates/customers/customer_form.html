@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments :: page_head(${pageTitle}, 'none')" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 <body>
 <div class="container-fluid">
 	<div th:replace="navigation :: menu"></div>
@@ -19,56 +18,15 @@
 	  <div class="form-group row">
 	    <label for="firstName" class="col-sm-4 col-form-label">First Name:</label>
 	    <div class="col-sm-8">
-	      <input type="text" class="form-control" th:field="*{firstName}" required="required" minlength="2" maxlength="45">
+	      <input type="text" class="form-control" th:field="*{firstName}" required minlength="2" maxlength="45">
 	    </div>
 	  </div>
 	  <div class="form-group row">
 	    <label for="lastName" class="col-sm-4 col-form-label">Last Name:</label>
 	    <div class="col-sm-8">
-	      <input type="text" class="form-control" th:field="*{lastName}" required="required" minlength="2" maxlength="45">
+	      <input type="text" class="form-control" th:field="*{lastName}" required minlength="2" maxlength="45">
 	    </div>
-	  </div>
-	  <div class="form-group row">
-	    <label for="cName" class="col-sm-4 col-form-label">UserName:</label>
-	    <div class="col-sm-8">
-	      <input type="text" class="form-control" th:field="*{cName}"required="required" minlength="2" maxlength="45">
-	    </div>
-	  </div>
-	
-		
-	  <div class="form-group row">
-	    <label for="dob" class="col-sm-4 col-form-label">Date of Birth:</label>
-	        
-	    <div class="input-group date col-sm-8" id="datepicker">
-							<input type="text" class="form-control" id="date" placeholder="DD/MM/YYYY" th:field="*{dob}" required minlength="2" maxlength="45"/>
-								<span class="input-group-append">
-								<span class="input-group-text bg-light d-block">
-									<i class="fa fa-calendar"></i>
-								</span>
-								</span>
-						</div>
-	  </div>
-	  
-	  <div class="form-group row">
-	    <label for="gender" class="col-sm-4 col-form-label">Gender:</label>
-	    <div class="col-sm-8">
-	      			
-	      			<div class="col-sm-10">
-						<div class="form-check form-check-inline ">
-  							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male" th:field="*{gender}">
-  							<label class="form-check-label" for="inlineRadio1">Male</label>
-						</div>
-						<div class="form-check form-check-inline">
-  							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female" th:field="*{gender}">
-  							<label class="form-check-label" for="inlineRadio2">Female</label>
-						</div>
-						<div class="form-check form-check-inline">
-  						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Transgender" th:field="*{gender}">
-  						<label class="form-check-label" for="inlineRadio3">Transgender</label>
-						</div>
- 				 	 </div>
-	    </div>
-	  </div>		  
+	  </div>	  
 	  
 	  <div class="form-group row">
 	    <label for="email" class="col-sm-4 col-form-label">E-mail:</label>
@@ -77,8 +35,6 @@
 	    </div>
 	  </div>
 	  
-	  
-	  
 	  <div class="form-group row">
 	    <label for="password" class="col-sm-4 col-form-label">Password:</label>
 	    <div class="col-sm-8">
@@ -86,66 +42,12 @@
 	    </div>
 	  </div>
 	  
-	  <div class="form-group row ">
-						
-      					<label for="confirmPassword" class="col-sm-4 col-form-label">Confirm Password:</label>
-						<div class="col-sm-8">
-						<input type="password" id="confirmPassword" class="form-control"
-							required="required" th:field="*{confirmPassword}" maxlength="15" minlength="6" placeholder="Retype your password"
-							oninput="checkPasswordMatch(this)" 
-					 	/>
-						</div>
-				</div>
-	  
 	  <div class="form-group row">
 	    <label for="phoneNumber" class="col-sm-4 col-form-label">Phone Number:</label>
 	    <div class="col-sm-8">
 	      <input type="text" class="form-control" th:field="*{phoneNumber}" required minlength="9" maxlength="12">
 	    </div>
 	  </div>
-	  
-	  <div class="form-group row ">
-					<label for="aadhaar" class="col-sm-4 col-form-label">Aadhaar</label>
-					<div class="col-sm-8">
-						<input type="number" th:field="*{aadhaar}" class="form-control" placeholder="XX XXXXXX XXX XXXX XXX"
-						required="required" maxlength="45" minlength="8" />
-					</div>
-		</div>
-		<div class="form-group row ">
-					<label for="UDID" class="col-sm-4 col-form-label">UDID</label>
-					<div class="col-sm-8">
-						<input type="number" th:field="*{udid}" class="form-control" placeholder="XX XXXXXX XXX XXXX XXX"
-						required="required" maxlength="45" minlength="8" />
-					</div>
-		</div>
-		<div class="form-group row ">
-					<label for="UDID" class="col-sm-4 col-form-label">Guardian Name</label>
-					<div class="col-sm-8">
-						<input type="text" th:field="*{guardianName}" class="form-control" 
-						required="required" maxlength="45" minlength="8" />
-					</div>
-		</div>
-		
-		<div class="form-group row ">
-					<label for="guardianAadhaar" class="col-sm-4 col-form-label">Guardian Aadhaar</label>
-					<div class="col-sm-8">
-						<input type="number" th:field="*{guardianAadhaar}" class="form-control" placeholder="XX XXXXXX XXX XXXX XXX"
-						required="required" maxlength="45" minlength="8" />
-					</div>
-		</div>
-		
-		<div class="form-group row ">
-					<label for="guardianRelationship" class="col-sm-5 col-form-label">Guardian Relationship</label>&nbsp
-					<div class="form-row align-items-center">
-    					<div class="col-auto my-6 ">
-    				       <select class="custom-select mr-lg-8 " id="inlineFormCustomSelect" th:field="*{guardianRelationship}">
-            								<option  th:value="Father" th:text="Father"></option>
-        									<option  th:value="Mother" th:text="Mother"></option>
-        									<option  th:value="Husband" th:text="Husband"></option>
-      						</select>
-    					</div>
-					</div>	
-				</div>
 	  
 	  <div class="form-group row">
 	    <label for="addressLine1" class="col-sm-4 col-form-label">Address Line 1:</label>
@@ -235,13 +137,5 @@
 </script>
 <script th:src="@{/js/common_form.js}"></script>
 <script th:src="@{/js/common_form_country_state.js}"></script>	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-<script>
-	$(function(){
-		$('#datepicker').datepicker({format: 'dd-mm-yyyy'});
-	});
-</script>
-
-
 </body>
 </html>
