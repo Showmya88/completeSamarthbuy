@@ -42,7 +42,7 @@ public class CustomerController {
 		model.addAttribute("pageTitle", "Customer Registration");
 		model.addAttribute("customer", new Customer());
 		
-		return "register/register_form";
+		return "register/register2";
 	}
 	
 	@PostMapping("/create_customer")
