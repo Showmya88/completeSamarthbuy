@@ -83,6 +83,15 @@ public class Product extends IdBasedEntity {
 	@Transient private boolean customerCanReview;
 	@Transient private boolean reviewedByCustomer;
 	
+	@Column(length = 255, nullable = false, name = "set_fair_use_type")
+	private String fairUseType;
+	
+	@Column(nullable = false, name = "set_per_order_limit")
+	private int perOrderLimit;
+	
+	@Column(nullable = false, name = "set_fair_use_limit")
+	private int fairUseLimit;
+	
 	public Product(Integer id) {
 		this.id = id;
 	}
@@ -343,6 +352,30 @@ public class Product extends IdBasedEntity {
 	public void setReviewedByCustomer(boolean reviewedByCustomer) {
 		this.reviewedByCustomer = reviewedByCustomer;
 	}
+	
+	public int getPerOrderLimit() {
+		return perOrderLimit;
+	}
+
+	public void setPerOrderLimit(int perOrderLimit) {
+		this.perOrderLimit = perOrderLimit;
+	}
+
+	public int getFairUseLimit() {
+		return fairUseLimit;
+	}
+
+	public void setFairUseLimit(int fairUseLimit) {
+		this.fairUseLimit = fairUseLimit;
+	}
+
+	public String getFairUseType() {
+		return fairUseType;
+	}
+
+	public void setFairUseType(String fairUseType) {
+		this.fairUseType = fairUseType;
+	}	
 	
 	
 }

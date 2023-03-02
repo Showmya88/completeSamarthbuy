@@ -34,7 +34,6 @@ public class CustomerRepositoryTests {
 		customer.setCountry(country);
 		customer.setFirstName("David");
 		customer.setLastName("Fountaine");
-		customer.setDob("12/3/1988");
 		customer.setPassword("password123");
 		customer.setEmail("david.s.fountaine@gmail.com");
 		customer.setPhoneNumber("312-462-7518");
