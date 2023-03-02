@@ -1,7 +1,7 @@
 server:
   port: 8082
   servlet:
-    context-path: /Shopme
+    context-path: /Samarthbuy
 spring:
   datasource:
     password: Madurai*1
