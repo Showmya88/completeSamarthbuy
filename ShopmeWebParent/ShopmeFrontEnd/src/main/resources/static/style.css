@@ -1,0 +1,45 @@
+*.icon-white {color: white}
+*.icon-silver {color: silver}
+*.icon-green {color: green}
+*.icon-dark {color: gray}
+
+@media screen and (max-width: 768px) {
+	/* small screen */
+	div.full-details { display: none }
+	div.less-details { display: block; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	/* medium screen */
+	div.full-details { display: block; }
+	div.less-details { display: none; }
+	.hideable-column { display: none }
+}
+
+@media screen and (min-width: 1024px) {
+	/* small screen */
+	div.less-details { display: none; }
+	.hideable-column { display: table-cell; }
+}
+
+    .img{
+        width: 300%;
+        height: 300%;
+    
+    }
+    .images{
+        height: 100px;
+        width: 100px;
+        margin:auto;
+        border-radius:50%;
+    } 
+
+    .text {
+        text-align: center;
+        color: rgb(165, 8, 238);
+        font-size: 30px;
+    }
+    .size{
+        text-align: center;
+        font-size: 18px;
+    }

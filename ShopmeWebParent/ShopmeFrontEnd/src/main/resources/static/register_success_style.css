@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+body {
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_129563643_abstract-colorful-background-with-pastel-pink-pastel-violet-and-pastel-purple-colors-can-be-used-for.html&psig=AOvVaw2tQZezDYGiiaYgznsBUlRh&ust=1671990714028000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjh8P3okvwCFQAAAAAdAAAAABAN");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:cover;
+}
+    
+    .center{
+        background-color:#f7f8f7;
+  margin:auto;
+  width: 75%;
+  height: 75%;
+  border: 3px solid #f7f8f7;
+  padding: 10px;
+  text-align: center;
+    }
+   
+
+.size{
+    font-size:25px;
+    text-align:center;
+    
+}
+.color{
+  color: #212F3D ;
+  font-size: 20px;
+}
+.log{
+  font-size: 18px;
+}
+
