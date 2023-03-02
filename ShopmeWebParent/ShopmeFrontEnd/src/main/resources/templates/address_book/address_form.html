@@ -7,12 +7,13 @@
 
 <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
 	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
-<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
+
 <link rel="stylesheet" type="text/css" th:href="@{/menu.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
 </head>
 <body>
 <div class="container-fluid">
-	<div th:replace="navigation :: header_menu3"></div>
+	<div th:replace="navigation :: header_menu4"></div>
 
 
 	<div class="text-center">
@@ -20,31 +21,30 @@
 	</div>
 	<div>&nbsp;</div>
 
-	<form class="addressbg" th:action="@{/address_book/save}" method="post" th:object="${address}">
-		<form class="addressbg" th:action="@{/address_book/cancel}" method="post" th:object="${address}">
-		
+	<form th:action="@{/address_book/save}" method="post" th:object="${address}"
+		style="max-width: 600px; margin: 0 auto">
 		<input type="hidden" th:field="*{id}" />
 		<input type="hidden" th:field="*{defaultForShipping}" />
 		<input type="hidden" name="redirect" th:value="${param.redirect}" />	
 	<div class="border border-secondary rounded p-3">			
 		<div class="form-group row">
-			<label class="col-sm-4 col-form-label"id="lable"style="font-weight:bold" >First Name:</label>
+			<label class="col-sm-4 col-form-label">First Name:</label>
 			<div class="col-sm-8">
-				<input type="text" th:field="*{firstName}" class="form-control "
+				<input type="text" th:field="*{firstName}" class="form-control"
 					required="required" maxlength="45" minlength="2" />
 			</div>
 		</div>
 		
 		<div class="form-group row">
-			<label class="col-sm-4 col-form-label"id="lable" >Last Name:</label>
-			<div class="col-sm-8 ">
-				<input type="text" th:field="*{lastName}" class="form-control "
+			<label class="col-sm-4 col-form-label">Last Name:</label>
+			<div class="col-sm-8">
+				<input type="text" th:field="*{lastName}" class="form-control"
 					required="required" maxlength="45" minlength="2" />
 			</div>
 		</div>				
 		
 		<div class="form-group row">
-			<label class="col-sm-4 col-form-label"id="lable" >Phone Number:</label>
+			<label class="col-sm-4 col-form-label">Phone Number:</label>
 			<div class="col-sm-8">
 				<input type="number" th:field="*{phoneNumber}" class="form-control"
 					required="required" maxlength="15" minlength="8" />
@@ -52,7 +52,7 @@
 		</div>
 
 		<div class="form-group row">
-			<label class="col-sm-4 col-form-label"id="lable" >Street Address Line 1:</label>
+			<label class="col-sm-4 col-form-label">Address Line 1:</label>
 			<div class="col-sm-8">
 				<input type="text" th:field="*{addressLine1}" class="form-control"
 					required="required" maxlength="64" minlength="3" />
@@ -60,7 +60,7 @@
 		</div>
 
 		<div class="form-group row">
-			<label class="col-sm-4 col-form-label"id="lable" > Street Address Line 2:</label>
+			<label class="col-sm-4 col-form-label">Address Line 2:</label>
 			<div class="col-sm-8">
 				<input type="text" th:field="*{addressLine2}" class="form-control"
 					maxlength="64" />
@@ -68,23 +68,15 @@
 		</div>
 
 		<div class="form-group row">
-			<label class="col-sm-4 col-form-label"id="lable" >City:</label>
+			<label class="col-sm-4 col-form-label">City:</label>
 			<div class="col-sm-8">
 				<input type="text" th:field="*{city}" class="form-control"
 					required maxlength="45" minlength="2" />
 			</div>
 		</div>
-		<div class="form-group row">
-			<label class="col-sm-4 col-form-label"id="lable" >State:</label>
-			<div class="col-sm-8">
-				<input type="text" th:field="*{state}" class="form-control"
-					maxlength="45" minlength="3" list="listStates" autocomplete="new-password" />
-				<datalist id="listStates"></datalist>
-			</div>
-		</div>
 
 		<div class="form-group row">
-			<label class="col-sm-4 col-form-label"id="lable" >Country:</label>
+			<label class="col-sm-4 col-form-label">Country:</label>
 			<div class="col-sm-8">
 				<select class="form-control" th:field="*{country}">
 					<th:block th:each="country : ${listCountries}">
@@ -94,10 +86,17 @@
 			</div>
 		</div>
 				
-		
+		<div class="form-group row">
+			<label class="col-sm-4 col-form-label">State/Province:</label>
+			<div class="col-sm-8">
+				<input type="text" th:field="*{state}" class="form-control"
+					maxlength="45" minlength="3" list="listStates" autocomplete="new-password" />
+				<datalist id="listStates"></datalist>
+			</div>
+		</div>
 								
 		<div class="form-group row">
-			<label class="col-sm-4 col-form-label"id="lable" > ZipCode:</label>
+			<label class="col-sm-4 col-form-label">Postal Code:</label>
 			<div class="col-sm-8">
 				<input type="number" th:field="*{postalCode}" class="form-control"
 					required maxlength="10" minlength="2" />
@@ -105,12 +104,7 @@
 		</div>
 																		
 		<div class="text-center">
-			<input  style="background-color:#301B86;color:aliceblue;width:146px;" type="submit" value="Save" class="btn btn-primary badge-pill btn-xxxl" />
-		<input  style="background-color:#301B86;color:aliceblue;width:146px;"type="submit" value="Cancel" class="btn btn-primary badge-pill btn-xxxl" />
-		
-		</div>
-		
-			
+			<input type="submit" value="Save" class="btn btn-primary" />
 		</div>
 	</div>
 	</form>

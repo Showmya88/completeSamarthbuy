@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
 <link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
 <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+
 </head>
 <body>
 <div class="container-fluid">
@@ -13,38 +14,42 @@
 
 	<div>
 			<br>
-			<h6>Home</h6>
+			<h6><a style="color:#000000;" class="in1" th:href="@{/}">Home</a></h6>
 	</div>
 	<div class="container">
     <div class="row">
         
         <div class="clo">
            
-        <image class="index2"src="./images/index2/first.png"></image></div>
-    <div class="clo">
-        <image class="index2"src="./images/index2/2image.png"></image></div>
-       
+        <image  src="./images/trisha1.png" class="index2"/></div>
         <br>
+    <div class="clo">
+        <image  src="./images/women1.png" class="index2"/></div>
+       
+        
     </div>
     <div class="row mt-2">
         <div class="clo">
      <a th:href="@{/women}">
-    <image  class="png"src="./images/index2/women.jpg"></image></a></div>
+    <image  class="png"src="./images/trending.JPG"></image></a></div>
     
     <div class="clo">
     <a th:href="@{/bags}">
-    <image class="png"src="./images/index2/men2.jpg"></image></a>
+    <image class="png"src="./images/new1.JPG"></image></a>
    </div>
    
    </div>
 
-
+	
+  
+	
+	 
 
 </div>	
 	
-<div>&nbsp;</div>	
-	<div th:replace="navigation :: footer_menu1"></div>
-</div>	
+
+	<footer>
+		<div th:replace="navigation :: footer_menu"></div></footer>
 
 
 </body>

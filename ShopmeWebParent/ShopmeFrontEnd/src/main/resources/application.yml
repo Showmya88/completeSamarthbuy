@@ -1,12 +1,14 @@
 server:
   port: 8081
   servlet:
-    context-path: /Samarthbuy
+    context-path: /Shopme
 spring:
   datasource:
     password: Madurai*1
     url: jdbc:mysql://rjsamarthbuy.crtvlx8jjssn.us-west-1.rds.amazonaws.com/samarthbuy
-    username: admin    #hikari:      #minimum-idle: 1
+    username: admin
+    #hikari:
+      #minimum-idle: 1
       #maximum-pool-size: 2
   jpa:
     hibernate:
