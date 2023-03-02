@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="fragments :: page_head('Page Not Found - Shopme', 'none')" />
+<head>
+<link th:replace="fragments :: page_head('Error - Shopme', 'none')" >
 <link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
-	<link rel="stylesheet" type="text/css" th:href="@{/menu.css}" />
 </head>
 <body>
 <div class="container-fluid">
@@ -11,7 +11,7 @@
 		<h2>Sorry, the requested page could not be found</h2>		
 	</div>
 
-	<footer><div th:replace="navigation :: footer_menu"></div></footer>
+	<div th:replace="navigation :: footer_menu"></div>
 	
 </div>
 </body>
