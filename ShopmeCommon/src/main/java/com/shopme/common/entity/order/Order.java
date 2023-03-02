@@ -184,16 +184,7 @@ public class Order extends AbstractAddress {
 		setCity(customer.getCity());
 		setCountry(customer.getCountry().getName());
 		setPostalCode(customer.getPostalCode());
-		setState(customer.getState());
-		setAadhaar(customer.getAadhaar());
-		setcName(customer.getcName());
-		setDob(customer.getDob());
-		setGender(customer.getGender());
-		setGuardianName(customer.getGuardianName());
-		setGuardianAadhaar(customer.getGuardianAadhaar());
-		setGuardianRelationship(customer.getGuardianRelationship());
-		setUdid(customer.getUdid());
-	
+		setState(customer.getState());		
 	}
 
 	@Override
@@ -220,8 +211,7 @@ public class Order extends AbstractAddress {
 		setCity(address.getCity());
 		setCountry(address.getCountry().getName());
 		setPostalCode(address.getPostalCode());
-		setState(address.getState());	
-		
+		setState(address.getState());			
 	}
 	
 	@Transient

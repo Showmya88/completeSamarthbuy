@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments :: page_head('Verification Failed!', 'none')" />
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/NewFile.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
 <body>
 <div class="container-fluid">
 	<div th:replace="navigation :: header_menu4"></div>
@@ -14,7 +18,7 @@
 
 	<div>&nbsp;</div>
 	
-	<div th:replace="navigation :: footer_menu"></div>
+	<footer><div th:replace="navigation :: footer_menu"></div></footer>
 </div>	
 </body>
 </html>
