@@ -69,16 +69,14 @@
 	 display:flex;
 	  }
       .browser{
-	  height:330%;
+	  height:260%;
 	  }
  .privacy{
-  width: 70%;
-  height:770%;
+  
+  height:650%;
   font-size:18px;
  }
 .terms{
-width: 65%;
-height:770%;
-}
 
-   
+height:615%;
+}
