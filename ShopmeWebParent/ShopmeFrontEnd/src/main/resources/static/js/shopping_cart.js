@@ -54,8 +54,12 @@ function updateQuantity(productId, quantity) {
 			xhr.setRequestHeader(csrfHeaderName, csrfValue);
 		}
 	}).done(function(updatedSubtotal) {
-		updateSubtotal(updatedSubtotal, productId);
-		updateTotal();
+		if(updatedSubtotal>0){
+        updateSubtotal(updatedSubtotal, productId);
+        updateTotal();
+        }else{
+        showWarningModal('As per policy Order limit is reached for this Product. Please try to Order with less Quantity.');
+    }
 	}).fail(function() {
 		showErrorModal("Error while updating product quantity.");
 	});	
@@ -83,6 +87,7 @@ function updateTotal() {
 }
 
 function showEmptyShoppingCart() {
+$("#sectionNote").hide();
 	$("#sectionTotal").hide();
 	$("#sectionEmptyCartMessage").removeClass("d-none");
 }
